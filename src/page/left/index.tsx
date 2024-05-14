@@ -80,7 +80,7 @@ export default function LeftBoard() {
               src='/favicon-left.png'
               alt=''
             />
-            <p className='font-bold text-inherit'>IMker</p>
+            <p className='font-bold text-inherit'>ImageMaker</p>
           </NavbarBrand>
 
           <NavbarContent justify='end'>

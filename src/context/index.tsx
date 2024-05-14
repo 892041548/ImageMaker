@@ -49,12 +49,12 @@ export default function ImgContextProvider({
   const [isCircle, setIsCircle] = useState(true)
 
   // 作者标签值
-  const [authorValue, setAuthorValue] = useState('@IMker')
+  const [authorValue, setAuthorValue] = useState('@ImageMaker')
 
   // 作者水印位置
   const [authorPosition, setAuthorPosition] = useState<any>('')
   // 标题&文案
-  const [titleValue, setTitleValue] = useState('花开花落，你陪了我多少年')
+  const [titleValue, setTitleValue] = useState('')
 
   // 字体
   const [fontValue, setFontValue] = useState('font-dingtalk')
@@ -360,7 +360,9 @@ export default function ImgContextProvider({
   useEffect(() => {
     if (shouldTranslateFlag) {
       // 在这里执行你希望在特定情况下的操作
-      handleTranslateTitleValue(titleValue); // 清除标记，防止重复执行
+      setTimeout(() => {
+        handleTranslateTitleValue(titleValue); // 清除标记，防止重复执行
+      }, 500);
       setShouldTranslateFlag(false)
     }
   }, [titleValue, shouldTranslateFlag]);
