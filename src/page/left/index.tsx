@@ -77,6 +77,7 @@ export default function LeftBoard() {
         <Navbar>
           <NavbarBrand>
             <img
+            style={{width: '20px'}}
               src='/favicon-left.png'
               alt=''
             />
