@@ -181,7 +181,7 @@ export default function RightBoard() {
                 color='primary'
                 variant='flat'
                 target='_blank'
-                // href='https://github.com/slince-zero/img-maker'
+                href='https://github.com/892041548/ImageMaker'
                 >
                 GitHub
               </Button>
